@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Book Pitch</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+			<img src="./images/logo-movie.png" alt="MoviePitch">
+			<a href="/"><span>Book</span>Pitch</a>
+		</header>
+    <main>
+
+      <!-- The Setup -->	
+			<section id="setup-container">
+				<div class="setup-inner">
+					<img src="/images/movieboss.png">
+					<div class="speech-bubble-ai" id="speech-bubble-ai">
+						<p id="movie-boss-text">
+							Give me a one-sentence concept and I'll give you an eye-catching title, a synopsis the publishers will love, a cover art...
+							AND a poem to encourage you!
+						</p>
+					</div>
+				</div>
+				<div class="setup-inner setup-input-container" id="setup-input-container">
+					<textarea id="setup-textarea" placeholder="An evil genius wants to take over the world using AI."></textarea>
+					<button class="send-btn" id="send-btn" aria-label="send">
+							<img src="images/send-btn-icon.png" alt="send">
+					</button>
+				</div>
+      </section>
+        
+        <!-- the output -->
+      <section class="output-container" id="output-container">
+          <div id="output-img-container" class="output-img-container"></div>
+          <h1 id="output-title"></h1>
+          <h2 id="output-stars"></h2>
+          <p id="output-text"></p>
+      </section>
+
+    </main>
+
+    <footer>
+      &copy; 2023 BookPitch All rights reserved (Developed by Peter Wu)
+    </footer>
+    
+
+    <script type="module" src="main.js"></script>
+		
+  </body>
+</html>
